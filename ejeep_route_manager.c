@@ -1,3 +1,6 @@
+// Tristan Jake Bonaobra                                    BSCS 2A
+// Chris Justin Taer                                           09/24/2025
+
 #include "ejeep_route_manager.h"
 #include <stdlib.h>
 #include <string.h>
@@ -77,3 +80,32 @@ void remove_current_stop(Jeepney *jeep)
         }
     }
 }
+//TODO
+// move_next 
+// If the jeep && its current stop exist:
+// Move the jeep to the next stop
+
+// move_prev
+// If the jeep && its current stop exist:
+//     Move the jeep to the previous stop
+
+// board_passengers
+// If the jeep, current stop, && passenger count are valid:
+// Determine how many passengers can board
+// Reduce waiting passengers at the stop
+// Increase total passengers in the jeep
+
+// add_stop_after
+// If the current stop and new stop name are valid:
+// Create a new stop
+// Set its name and initialize passenger count
+// Insert it after the current stop in the route
+
+// remove_current_stop
+// If the jeep and its current stop exist:
+// If it's the only stop:
+// Remove it and clear the jeep's current stop
+//  Otherwise:
+// Link the previous and next stops together
+// Move the jeep to the next stop
+//  Remove the current one
